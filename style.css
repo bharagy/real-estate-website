@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+    height: 5000px;
+    overflow-x: hidden;
+}
+.bg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.nav-item .nav-link:hover{
+    color: #ff2962;
+}
+/* Navbar start */
+.navbar-brand{
+    font-weight: bold;
+}
+.navbar-nav{
+    color: white;
+}
+.navbar-nav:hover{
+    color: blue;
+}
+/* Navbar end */
+
+/* Home start */
+.home{
+    height: 100vh;
+    padding: 5px 11% 80px;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.home-content{
+    width: 70%;
+    margin-top: 150px;
+    flex: 1 1 400px;
+}
+.home-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(0, 85, 255);
+}
+.home-content h3 span{
+    color: blue;
+}
+.home-content p{
+    font-weight: bold;
+}
+#home-btn{
+    padding: 10px;
+    text-decoration: none;
+    background: white;
+    color: blue;
+    border-radius: 10px;
+}
+.home .home-bottom{
+    width: 100%;
+    margin-top: 7%;
+    padding: 6rem;
+    position: relative;
+}
+.home .home-bottom .container{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    transform: translate(0, -4.5rem);
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 35px black;
+    padding: 1rem 1rem;
+    width: 70vw;
+    margin: 0 auto;
+}
+.home .home-bottom .container .box{
+    padding: .2rem 1rem;
+    width: 100%;
+    flex: 1 0 120px;
+}
+.home .home-bottom .container .box:nth-child(1), .home .home-bottom .container .box:nth-child(2){
+    border-right: 2px solid var(--black);
+}
+.home .home-bottom .container .box h5{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+.home .home-bottom .container .box p{
+    color: grey;
+    font-size: 1.1rem;
+}
+.home .home-bottom .container .box a{
+    float: right;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.home .home-bottom .container .box a:hover{
+    background: #a7abff;
+}
+/* Home end */
+
+/* About start */
+.about{
+    padding: 100px 11% 100px;
+}
+.img-fluid{
+    width: 500px;
+    height: 700px;
+}
+.about .card{
+    margin-bottom: 50px;
+}
+.about h2{
+    color: black;
+    font-weight: 700;
+}
+.about-btn{
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 27px;
+    color: blue;
+    background-color: white;
+}
+.about h2{
+    margin-left: 6px;
+    position: relative;
+    display: inline;
+}
+.about .col-md-7{
+    margin-top: 7%;
+}
+
+.about h2::after{
+    content: '';
+    width: 3px;
+    height: 30px;
+    display: block;
+    background-color: blue;
+    position: absolute;
+    left: -6px;
+    top: 5px;
+}
+
+@media screen and(max-width: 636px){
+    .about h2{
+        margin-top: 10px;
+    }
+    
+}
+
+/* About end */
+
+
+/* sale section start */
+.top-section{
+    padding: 10px 11% 100px;
+}
+.top-section h3{
+    color: black;
+    font-weight: 600;
+    display: inline;
+    position: relative;
+    text-align: center;
+    margin-left: 40%;
+}
+.top-section h3::after{
+    content: '';
+    width: 3px;
+    height: 30px;
+    display: block;
+    background-color: blue;
+    position: absolute;
+    left: -6px;
+    top: 6px;
+}
+.top-section h4{
+    text-align: center;
+}
+.top-section .row{
+    margin-top: 30px;
+    align-items: center;
+}
+.top-section .row .card{
+    border: none;
+}
+.top-section .row .card img{
+    width: 300px;
+    margin: auto;
+}
+.top-section .card-body h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: start;
+}
+.top-section .card-body p{
+    text-align: start;
+}
+.sale-btn{
+    padding: 10px 20px;
+    width: 200px;
+    margin-left: 40%;
+    border-radius: 27px;
+    color: blue;
+    background-color: white;
+}
+
+@media screen and(max-width: 636px){
+    .top-section h3{
+        margin-top: 10px;
+    }
+    
+}
+
+/* sale section end */
+
+/* price section start */
+.price-section{
+    padding: 80px 0;
+}
+.services{
+    padding: 20px;
+    
+}
+.price-section .card{
+    background-color: rgb(0, 136, 255);
+}
+.price-section .card h6{
+    background-color: #121626;
+    color: white;
+}
+.price-section h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: lowercase;
+}
+.services .rupee{
+    font-weight: 900;
+}
+.services p span::before{
+    content: '';
+    background: blue;
+    height: 5px;
+    width: 50px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+#price-btn{
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    margin-left: 50px;
+}
+
+
+/* price section end */
+
+/* Middle section start */
+.middle h2{
+    color: black;
+    font-weight: 700;
+    position: relative;
+    display: inline;
+}
+
+.middle h2::after{
+    content: '';
+    width: 3px;
+    height: 30px;
+    display: block;
+    background-color: blue;
+    position: absolute;
+    left: -6px;
+    top: 5px;
+}
+.middle-btn{
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 27px;
+    color: blue;
+    background-color: white;
+}
+/* Middle section end */
+
+/* Icon section start */
+.icon-section{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.icon-section h2{
+     color: white;
+    font-weight: 600;
+     display: inline;
+     position: relative;
+    text-align: center;
+}
+
+.icon-section h2::after{
+    content: '';
+    width: 3px;
+    height: 30px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: -6px;
+    top: 5px;
+}
+.icon-section{
+    background-color: blue;
+    color: white;
+}
+.card-body i{
+    font-weight: 500px;
+
+}
+.icon-section .card-body{
+    background-color: blue;
+}
+.icon-btn{
+    height: 50px;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 27px;
+    color: black;
+}
+/* Icon section end */
+
+/* carousel section start*/
+.carousel-section{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.section-header{
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.section-header:after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    background: #fff;
+}
+.section-header span{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+}
+.testimonials{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.img-area{
+    margin: 0 15px 15px 15px;
+}
+.img-area img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid white;
+}
+.content{
+    font-size: 18px;
+}
+.content p{
+    text-align: justify;
+}
+.content p span{
+    font-size: 48px;
+    margin-right: 20px;
+    color: #fff;
+}
+.socials i{
+    margin-right:25px ;
+}
+.bio h4{
+    font-family: sans-serif;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+/* carousel section end */
+
+/* Food section start */
+.footer-section{
+    padding: 100px 11% 100px;
+    background-color: #121626;
+    color: white;
+}
+#footer .card img{
+    height: 400px;
+}
+.footer-section textarea{
+    resize: none;
+}
+.footer-btn{
+    padding: 8px;
+    margin-top: 30px;
+    background-color: #e53937;
+    border: 2px solid coral;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footer-btn:hover{
+    background: #e53937;
+    color: white;
+    border: 2px solid white;
+}
+.footer1 p{
+    margin: 0;
+    color: #69696b;
+}
+.footer1 link{
+    color: #69696b;
+    transition: all 0.4s;
+}
+.footer1 link:hover{
+    color: #ff2962;
+    padding-left: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.footer1 input{
+    height: 45px;
+    width: 70%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.footer1 button{
+    height: 45px;
+    width: 20%;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #e53937;
+    color: white;
+}
+
+/* Food section end */
